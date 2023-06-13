@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form style='margin-top:10%;margin-left:25%' class="for" method="POST" action="{% url 'news_detector' %}">
+    {% csrf_token %}
+    <h1 style='margin-left:20%'>Fake News Detection</h1>
+    <p style="text-align:center; width:70%; font-size:20px"  for="text">This is fake news detection project in which we used machine learning algorithms to detect the authenticity of the news article which we defined in the data set.
+        To see the result accuracy, f1 score, precision and recall of the data set. Click the below button</p><br><br>
+   <textarea name="text" id="text"></textarea><br>
+    <input style="color:blue; font-weight:bold; width:80px; height:40px; margin-left:30%" type="submit" value="Result">
+</form>
+
+</body>
+</html>
